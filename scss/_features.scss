@@ -6,7 +6,7 @@
   }
 
   &__heading {
-    max-width: 375px;
+    max-width: 400px;
     font-size: 2rem;
     color: $dark-text;
     padding-bottom: 1.5rem;
@@ -22,6 +22,10 @@
     padding: 2rem;
     border: 2px solid $ligh-shadow;
     border-radius: 5px;
+    &:hover {
+      background-color: $blue-background;
+      @include transition-ease(0.2s);
+    }
   }
 
   &__box-heading {
