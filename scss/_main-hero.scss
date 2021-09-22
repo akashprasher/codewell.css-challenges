@@ -64,6 +64,23 @@
     border: 1px solid #fff;
     border-radius: 50%;
     margin-left: -25px;
+    @include transition-ease(0.5s);
+
+    &:hover {
+      margin-right: 25px;
+      transform: scale(1.5);
+      @include transition-ease(0.5s);
+    }
+  }
+
+  .avt-one {
+    @include transition-ease(0.5s);
+
+    &:hover {
+      margin-right: 25px;
+      transform: scale(1.5);
+      @include transition-ease(0.5s);
+    }
   }
 
   &__right-content {

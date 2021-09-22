@@ -1,0 +1,36 @@
+.features {
+  padding: 2rem 0rem;
+
+  &__content {
+    @include container;
+  }
+
+  &__heading {
+    max-width: 375px;
+    font-size: 2rem;
+    color: $dark-text;
+    padding-bottom: 1.5rem;
+  }
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+
+  &__box {
+    padding: 2rem;
+    border: 2px solid $ligh-shadow;
+    border-radius: 5px;
+  }
+
+  &__box-heading {
+    color: $dark-text;
+    padding: 0.7rem 0rem;
+  }
+
+  &__box-paragraph {
+    color: $light-text;
+    text-align: justify;
+  }
+}
