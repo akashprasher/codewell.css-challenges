@@ -150,7 +150,7 @@ nav .navigation__button:hover {
 }
 
 .features {
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
 }
 
 .features__content {
@@ -193,7 +193,7 @@ nav .navigation__button:hover {
 
 .testimonials {
   background-color: #d7f5f5;
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
 }
 
 .testimonials__content {
@@ -265,5 +265,79 @@ nav .navigation__button:hover {
 .testimonials .user-image {
   transform: scale(1.2);
   padding-right: 0.8rem;
+}
+
+.pricing {
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+.pricing__heading {
+  font-size: 2rem;
+  color: #1f1f1f;
+}
+
+.pricing__paragraph {
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem 0rem 3rem 0rem;
+  color: #7e8b91;
+}
+
+.pricing__box {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+  border: 2px solid #ffd858;
+  border-radius: 10px;
+  background-color: #ffeefc;
+}
+
+.pricing__box h3 {
+  color: #7e8b91;
+}
+
+.pricing__box h3 span {
+  font-size: 3rem;
+  color: #1f1f1f;
+}
+
+.pricing__box button {
+  width: 100%;
+  padding: 1rem 0rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0094d8;
+  color: #fff;
+}
+
+.pricing__box button i {
+  padding-right: 1rem;
+}
+
+.pricing__box button:hover {
+  background-color: #00aeff;
+}
+
+.pricing__box__month {
+  text-align: left;
+}
+
+.pricing hr {
+  margin: 1rem 0rem;
+}
+
+.pricing__para-div {
+  text-align: left;
+}
+
+.pricing__para-div div {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.pricing__para-div div img {
+  padding-right: 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
