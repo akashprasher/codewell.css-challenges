@@ -14,6 +14,23 @@
   </head>
   <body>
     <header>
+      <div id="mobile-nav" class="mobile-nav">
+        <ul class="mobile-nav__links">
+          <a href="#!"><li class="mobile-nav__link">Home</li></a>
+          <a href="#section-2"><li class="mobile-nav__link">Features</li></a>
+          <a href="#section-3"><li class="mobile-nav__link">Pricing</li></a>
+          <a href="https://twitter.com/akashprashar"
+            ><li class="mobile-nav__link">
+              <button class="mobile-nav__button">
+                <i class="fab fa-twitter"></i> Sign in with twitter
+              </button>
+            </li></a
+          >
+          <li class="mobile-nav__link">
+            <i id="close" class="fas fa-times"></i>
+          </li>
+        </ul>
+      </div>
       <nav>
         <div class="logo">
           <h1 class="logo__text">Chrip.</h1>
@@ -32,8 +49,12 @@
             >
           </ul>
         </div>
+        <div id="hamburger">
+          <img id="hamburger-logo" src="./assets/Hamburger Menu.svg" alt="" />
+        </div>
       </nav>
     </header>
+
     <main>
       <section class="main-hero">
         <div class="main-hero__content">
@@ -110,9 +131,15 @@
           <div class="main-hero__right-content">
             <img
               class="main-hero__image"
-              src="./assets/Hero Image (Desktop View).png"
+              src="./assets/hero_image_desktop.png"
               alt=""
             />
+            <img
+              class="main-hero__image-tab"
+              src="./assets/hero_image_tablet.png"
+              alt=""
+            />
+            <div class="main-hero__background-image"></div>
           </div>
         </div>
       </section>
@@ -303,5 +330,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

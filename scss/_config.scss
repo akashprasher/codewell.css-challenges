@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700;900&display=swap");
 
 // font-family: 'Poppins', sans-serif;
 // font-family: 'Roboto', sans-serif;
@@ -12,4 +12,28 @@ html {
   padding: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+@mixin media-sm {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 411px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
 }

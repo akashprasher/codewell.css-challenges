@@ -1,0 +1,159 @@
+// @include media-sm{}
+// @include media-md{}
+// @include media-lg{}
+// @include media-xl{}
+
+@include media-sm {
+  nav {
+    height: 5vh !important;
+    padding-top: 5vh !important;
+
+    #hamburger {
+      display: block !important;
+    }
+
+    .navigation__links {
+      display: none !important;
+    }
+  }
+
+  .main-hero {
+    background-color: $creamy;
+    height: 100% !important;
+
+    &__heading {
+      font-size: 2rem !important;
+    }
+
+    &__image-tab {
+      display: none;
+    }
+
+    &__content {
+      // display: block !important;
+      @include container;
+      height: 100%;
+
+      flex-direction: column-reverse;
+    }
+    &__right-content {
+      width: 100% !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__image {
+      height: auto !important;
+      width: 100%;
+      float: none !important;
+      padding: 2rem 0rem;
+    }
+
+    &__left-content {
+      width: 100% !important;
+    }
+
+    &__left-button,
+    &__right-button {
+      width: 100%;
+      padding: 1rem 0rem !important;
+    }
+  }
+
+  .testimonials {
+    background-color: $blue-background;
+    padding: 3rem 0rem;
+
+    &__boxes {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-gap: 1rem;
+    }
+  }
+
+  .features {
+    &__boxes {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-gap: 1.5rem;
+    }
+  }
+
+  .pricing {
+    &__box {
+      margin: 0vw 5vw !important;
+    }
+  }
+
+  .footer {
+    padding: 3rem 0rem;
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
+
+@include media-md {
+  .main-hero {
+    &__content {
+      flex-direction: column-reverse !important;
+    }
+
+    &__left-content {
+      padding-top: 2rem;
+    }
+
+    &__left-content,
+    &__right-content {
+      width: 100% !important;
+      height: auto !important;
+    }
+    &__image {
+      display: none;
+    }
+
+    &__image-tab {
+      // height: 100%;
+      width: 70vw;
+    }
+  }
+
+  .testimonials {
+    &__boxes {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+}
+
+@include media-lg {
+  .main-hero {
+    &__content {
+      flex-direction: column-reverse !important;
+    }
+
+    &__left-content {
+      padding-top: 2rem;
+    }
+
+    &__left-content,
+    &__right-content {
+      width: 100% !important;
+      height: auto !important;
+    }
+    &__image {
+      display: none;
+    }
+
+    &__image-tab {
+      width: 70vw;
+    }
+  }
+}
+@include media-xl {
+  .main-hero {
+    &__image-tab {
+      display: none;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700;900&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -10,16 +10,205 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  nav {
+    height: 5vh !important;
+    padding-top: 5vh !important;
+  }
+  nav #hamburger {
+    display: block !important;
+  }
+  nav .navigation__links {
+    display: none !important;
+  }
+  .main-hero {
+    background-color: #fffdf4;
+    height: 100% !important;
+  }
+  .main-hero__heading {
+    font-size: 2rem !important;
+  }
+  .main-hero__image-tab {
+    display: none;
+  }
+  .main-hero__content {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-width: 320px) and (max-device-width: 480px) {
+  .main-hero__content {
+    margin: 0vh 5vw;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-width: 480px) {
+  .main-hero__content {
+    margin: 0vh 15vw;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .main-hero__right-content {
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-hero__image {
+    height: auto !important;
+    width: 100%;
+    float: none !important;
+    padding: 2rem 0rem;
+  }
+  .main-hero__left-content {
+    width: 100% !important;
+  }
+  .main-hero__left-button, .main-hero__right-button {
+    width: 100%;
+    padding: 1rem 0rem !important;
+  }
+  .testimonials {
+    background-color: #d7f5f5;
+    padding: 3rem 0rem;
+  }
+  .testimonials__boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 1rem;
+  }
+  .features__boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 1.5rem;
+  }
+  .pricing__box {
+    margin: 0vw 5vw !important;
+  }
+  .footer {
+    padding: 3rem 0rem;
+  }
+  .footer__content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 768px) {
+  .main-hero__content {
+    flex-direction: column-reverse !important;
+  }
+  .main-hero__left-content {
+    padding-top: 2rem;
+  }
+  .main-hero__left-content, .main-hero__right-content {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .main-hero__image {
+    display: none;
+  }
+  .main-hero__image-tab {
+    width: 70vw;
+  }
+  .testimonials__boxes {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main-hero__content {
+    flex-direction: column-reverse !important;
+  }
+  .main-hero__left-content {
+    padding-top: 2rem;
+  }
+  .main-hero__left-content, .main-hero__right-content {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .main-hero__image {
+    display: none;
+  }
+  .main-hero__image-tab {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main-hero__image-tab {
+    display: none;
+  }
+}
+
 header {
   background-color: #fffdf4;
 }
 
+header .mobile-nav {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background-color: #0094d8;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+header .mobile-nav #close {
+  color: #fff;
+  padding-top: 3rem;
+}
+
+header .mobile-nav__links {
+  text-align: center;
+}
+
+header .mobile-nav__links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .mobile-nav__links li {
+  list-style-type: none;
+  font-size: 2rem;
+  padding: 0.2em 0rem;
+}
+
+header .mobile-nav__button {
+  background-color: #fff;
+  color: #0094d8;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 15px;
+}
+
+header #hamburger {
+  display: none;
+}
+
 nav {
-  margin: 0vh 15vw;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  nav {
+    margin: 0vh 5vw;
+  }
+}
+
+@media only screen and (min-device-width: 480px) {
+  nav {
+    margin: 0vh 15vw;
+  }
+}
+
+nav .hamburger {
+  display: none;
 }
 
 nav .logo__text {
@@ -70,8 +259,19 @@ nav .navigation__button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0vh 15vw;
   height: 100%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .main-hero__content {
+    margin: 0vh 5vw;
+  }
+}
+
+@media only screen and (min-device-width: 480px) {
+  .main-hero__content {
+    margin: 0vh 15vw;
+  }
 }
 
 .main-hero__left-content {
@@ -153,6 +353,10 @@ nav .navigation__button:hover {
 
 .main-hero__image {
   height: 100%;
+}
+
+.main-hero__image {
+  height: 100%;
   float: right;
   padding: 2rem 0rem;
 }
@@ -161,8 +365,16 @@ nav .navigation__button:hover {
   padding: 3rem 0rem;
 }
 
-.features__content {
-  margin: 0vh 15vw;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .features__content {
+    margin: 0vh 5vw;
+  }
+}
+
+@media only screen and (min-device-width: 480px) {
+  .features__content {
+    margin: 0vh 15vw;
+  }
 }
 
 .features__heading {
@@ -204,8 +416,16 @@ nav .navigation__button:hover {
   padding: 3rem 0rem;
 }
 
-.testimonials__content {
-  margin: 0vh 15vw;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .testimonials__content {
+    margin: 0vh 5vw;
+  }
+}
+
+@media only screen and (min-device-width: 480px) {
+  .testimonials__content {
+    margin: 0vh 15vw;
+  }
 }
 
 .testimonials__heading {
@@ -359,10 +579,21 @@ nav .navigation__button:hover {
 
 .footer__content {
   width: 100%;
-  margin: 0vh 15vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .footer__content {
+    margin: 0vh 5vw;
+  }
+}
+
+@media only screen and (min-device-width: 480px) {
+  .footer__content {
+    margin: 0vh 15vw;
+  }
 }
 
 .footer__logo {
