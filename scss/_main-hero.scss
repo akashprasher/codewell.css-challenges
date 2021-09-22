@@ -15,7 +15,7 @@
 
   &__heading {
     font-size: 2.7rem;
-    font-weight: 700;
+    // font-weight: 900;
     line-height: 3rem;
     color: $dark-text;
   }
@@ -23,6 +23,11 @@
   &__paragraph {
     color: $light-text;
     padding: 1rem 0rem;
+
+    &__int {
+      color: $blue-color;
+      font-weight: 700;
+    }
   }
 
   &__left-button {
@@ -52,7 +57,7 @@
   }
 
   .avatar {
-    padding: 1rem 0rem;
+    padding-top: 1rem;
   }
 
   .avatars-small {

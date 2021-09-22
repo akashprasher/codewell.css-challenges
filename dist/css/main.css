@@ -72,7 +72,6 @@ nav .navigation__button:hover {
 
 .main-hero__heading {
   font-size: 2.7rem;
-  font-weight: 700;
   line-height: 3rem;
   color: #1f1f1f;
 }
@@ -80,6 +79,11 @@ nav .navigation__button:hover {
 .main-hero__paragraph {
   color: #7e8b91;
   padding: 1rem 0rem;
+}
+
+.main-hero__paragraph__int {
+  color: #0094d8;
+  font-weight: 700;
 }
 
 .main-hero__left-button {
@@ -109,7 +113,7 @@ nav .navigation__button:hover {
 }
 
 .main-hero .avatar {
-  padding: 1rem 0rem;
+  padding-top: 1rem;
 }
 
 .main-hero .avatars-small {
