@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -28,6 +32,10 @@ nav .navigation__links {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+nav .navigation__links a {
+  text-decoration: none;
 }
 
 nav .navigation__link {
@@ -78,7 +86,7 @@ nav .navigation__button:hover {
 
 .main-hero__paragraph {
   color: #7e8b91;
-  padding: 1rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
 .main-hero__paragraph__int {
@@ -113,7 +121,7 @@ nav .navigation__button:hover {
 }
 
 .main-hero .avatar {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 .main-hero .avatars-small {
@@ -339,5 +347,38 @@ nav .navigation__button:hover {
 
 .pricing__para-div div img {
   padding-right: 0.5rem;
+}
+
+.footer {
+  height: 10vh;
+  background-color: #d7f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__content {
+  width: 100%;
+  margin: 0vh 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  font-style: italic;
+  color: #0094d8;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__nav li {
+  list-style: none;
+  padding-left: 1rem;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

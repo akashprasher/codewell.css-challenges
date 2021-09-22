@@ -3,6 +3,10 @@
 // font-family: 'Poppins', sans-serif;
 // font-family: 'Roboto', sans-serif;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;

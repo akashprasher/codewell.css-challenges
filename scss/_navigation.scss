@@ -20,6 +20,10 @@ nav {
     &__links {
       @include flex-center;
       cursor: pointer;
+
+      a {
+        text-decoration: none;
+      }
     }
     &__link {
       padding-left: 1rem;
