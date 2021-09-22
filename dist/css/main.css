@@ -94,7 +94,7 @@ html {
   }
 }
 
-@media screen and (min-width: 411px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .main-hero__content {
     flex-direction: column-reverse !important;
   }
