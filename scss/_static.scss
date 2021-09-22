@@ -1,0 +1,21 @@
+// Variables
+$blue-color: #0094d8;
+$light-text: #7e8b91;
+$dark-text: #1f1f1f;
+$light-blue-color: #00aeff;
+$creamy: #fffdf4;
+
+// @mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin container {
+  margin: 0vh 15vw;
+}
+
+@mixin transition-ease($sec) {
+  transition: all $sec ease-in-out;
+}

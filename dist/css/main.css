@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #fffdf4;
+}
+
+nav {
+  margin: 0vh 15vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo__text {
+  font-style: italic;
+  color: #0094d8;
+}
+
+nav .navigation__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+nav .navigation__link {
+  padding-left: 1rem;
+  list-style: none;
+  color: #7e8b91;
+}
+
+nav .navigation__link:hover {
+  color: #0094d8;
+}
+
+nav .navigation__button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0094d8;
+  color: #fff;
+}
+
+nav .navigation__button:hover {
+  background-color: #00aeff;
+}
+
+.main-hero {
+  background-color: #fffdf4;
+  height: 90vh;
+}
+
+.main-hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0vh 15vw;
+  height: 100%;
+}
+
+.main-hero__left-content {
+  width: 50%;
+}
+
+.main-hero__heading {
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 3rem;
+  color: #1f1f1f;
+}
+
+.main-hero__paragraph {
+  color: #7e8b91;
+  padding: 1rem 0rem;
+}
+
+.main-hero__left-button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0094d8;
+  color: #fff;
+}
+
+.main-hero__left-button:hover {
+  background-color: #00aeff;
+}
+
+.main-hero__right-button {
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #0094d8;
+  font-weight: 600;
+}
+
+.main-hero__right-button:hover {
+  transform: translateX(2px);
+  transition: all 0.2s ease-in-out;
+}
+
+.main-hero .avatar {
+  padding: 1rem 0rem;
+}
+
+.main-hero .avatars-small {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-left: -25px;
+}
+
+.main-hero__right-content {
+  width: 50%;
+  height: 100%;
+}
+
+.main-hero__image {
+  height: 100%;
+  float: right;
+  padding: 2rem 0rem;
+}
+/*# sourceMappingURL=main.css.map */

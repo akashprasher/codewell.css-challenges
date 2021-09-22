@@ -1,0 +1,47 @@
+header {
+  background-color: $creamy;
+}
+
+nav {
+  @include container;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    &__text {
+      font-style: italic;
+      color: $blue-color;
+    }
+  }
+
+  .navigation {
+    &__links {
+      @include flex-center;
+      cursor: pointer;
+    }
+    &__link {
+      padding-left: 1rem;
+      list-style: none;
+      color: $light-text;
+
+      &:hover {
+        color: $blue-color;
+      }
+    }
+
+    &__button {
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: $blue-color;
+      color: #fff;
+
+      &:hover {
+        background-color: $light-blue-color;
+      }
+    }
+  }
+}
