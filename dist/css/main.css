@@ -597,6 +597,7 @@ nav .navigation__button:hover {
 }
 
 .footer__logo {
+  font-size: 1.5rem;
   font-style: italic;
   color: #0094d8;
 }
